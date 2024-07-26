@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POLLUTION MONITORING SYSTEM</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <style>
+        /* General Section Styling */
+        section {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Specific Section Backgrounds */
+        #home {
+            background-image: url(images/bb.jpg);
+            color: red; /* Text color for better visibility on dark backgrounds */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 715px;
+            
+        }
+
+        #about {
+            background-image: url(images/aboutus.png);
+            background-size: cover;
+            background-position: center;
+            color: rgb(0, 6, 3); /* Text color for better visibility on dark backgrounds */
+            padding: 120px;
+            height: auto; /* Adjust height as needed */
+            min-height: 400px; /* Ensure section has a minimum height */
+        }
+
+        /* Add CSS for the alert section */
+        #alert-section {
+            background-color: #f8d7da;
+            color: #1c07ff;
+            padding: 15px;
+            margin: 20px;
+            border-radius: 5px;
+            text-align: center;
+            display: none; /* Initially hidden */
+            background-image: url(images/alert.png);
+            background-size: cover; /* Ensure the background image covers the section */
+            background-position: center; /* Center the background image */
+        }
+        .alert {
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+
+         /* Precautions Section */
+        #precautions-section {
+            background-color: #d1ecf1;
+            color: #0013e6;
+            padding: 15px;
+            margin: 20px;
+            border-radius: 5px;
+            text-align: center;
+            background-image: url(images/pre.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Smooth scroll effect */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .highlight {
+            background-color: #ffebeb;
+            font-weight: bold;
+        }
+
+        /* Ensure images don't overlap */
+        .about-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .about-left img {
+            max-width: 100%; /* Ensure the image is responsive and doesn't overflow */
+            height: auto;
+            display: block;
+        }
+
+        .about-right {
+            flex: 1;
+            padding: 20px;
+        }
+
+        #alert-section {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            margin: 20px;
+            border-radius: 5px;
+            text-align: center;
+            display: none; /* Initially hidden */
+            background-image: url(images/alert.png);
+            background-size: cover; /* Ensure the background image covers the section */
+            background-position: center; /* Center the background image */
+        }
+
+          /* Other Sections */
+          #graphs {
+            background-image: url(images/graphs.png);
+            background-size: cover;
+            background-position: center;
+            padding: 50px 20px;
+            color: red;
+        }
+
+          /* Carbon Credit Score Section */
+          #credit-score {
+            background-image: url(images/bg5.jpg);
+            background-size: cover;
+            background-position: center;
+            padding: 50px 20px;
+            color: #000000;
+        }
+
+        .credit-score-wrap {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .credit-score-left {
+            flex: 1;
+        }
+
+        .credit-score-img {
+            max-width: 100%; /* Ensures the image scales down to fit the container */
+            height: auto; /* Keeps the aspect ratio intact */
+        }
+
+        .credit-score-right {
+            flex: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <div class="container">
+            <nav id="navbar">
+                <div id="logo">
+                    <img src="images/l.jpg" alt="">
+                </div>
+
+                <ul>
+                    <li class="item"><a href="#home">HOME</a></li>
+                    <li class="item"><a href="#about">ABOUT US</a></li>
+                    <li class="item"><a href="#graphs">GRAPHS</a></li>
+                    <li class="item"><a href="#credit-score">CARBON CREDIT SCORE</a></li>
+                    <li class="item"><a href="#precautions-section">PRECAUTIONS</a></li>
+                    <li class="item" id="alert-nav"><a href="#alert-section">ALERT MESSAGES</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <h1 class="h-primary">IOT BASED POLLUTION MONITORING SYSTEM</h1>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="about-wrap">
+                <div class="about-right">
+                    <img src="images/about us.png" alt="">
+                </div>
+                <div class="about-left">
+                    <h1 class="h-primary center">ABOUT US</h1>
+                    <p>A Pollution Monitoring System is a sophisticated technology aimed at assessing and managing air quality by focusing on critical pollutants like CO2, NO2, SO2, and CO. This system employs a network of sensors and data analytics tools to continuously measure the concentration levels of these gases in the atmosphere. By providing real-time data, the system enables users to monitor air quality and identify pollution sources, facilitating timely interventions to reduce harmful emissions.
+                        The integration of such a system is crucial for both environmental protection and public health. High levels of CO2 contribute to climate change, while elevated NO2 and SO2 levels can lead to respiratory problems and other health issues. Monitoring CO levels is essential as it can cause serious health risks, including cardiovascular problems.
+                        With its advanced analytical capabilities, the Pollution Monitoring System can generate detailed reports and forecasts, helping policymakers and environmentalists develop effective strategies to combat air pollution. Additionally, it supports compliance with regulatory standards and enhances community awareness about air quality. Overall, this technology plays a vital role in creating healthier environments and ensuring a sustainable future by addressing and managing air pollution effectively.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Graphs Section -->
+    <section id="graphs">
+        <h1 class="h-primary center">GRAPHS</h1>
+        <div class="container">
+            <div class="graph">
+                <h2 class="h-secondary center">NO2 Levels</h2>
+                <canvas id="no2Graph"></canvas>
+                <div class="total-readings">
+                    <h3>Total NO2: <span id="totalNo2">0</span></h3>
+                </div>
+            </div>
+            <div class="graph">
+                <h2 class="h-secondary center">SO2 Levels</h2>
+                <canvas id="so2Graph"></canvas>
+                <div class="total-readings">
+                    <h3>Total SO2: <span id="totalSo2">0</span></h3>
+                </div>
+            </div>
+            <div class="graph">
+                <h2 class="h-secondary center">CO2 Levels</h2>
+                <canvas id="co2Graph"></canvas>
+                <div class="total-readings">
+                    <h3>Total CO2: <span id="totalCo2">0</span></h3>
+                </div>
+            </div>
+            <div class="graph">
+                <h2 class="h-secondary center">CO Levels</h2>
+                <canvas id="coGraph"></canvas>
+                <div class="total-readings">
+                    <h3>Total CO: <span id="totalCo">0</span></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carbon Credit Score Section -->
+    <section id="credit-score">
+        <h1 class="h-primary center">CARBON CREDIT SCORE</h1>
+        <div class="container">
+            <div class="credit-score-wrap">
+                <div class="credit-score-left">
+                    <img src="images/cs .jpg" alt="credit-score-img" class="credit-score-img" />
+                </div>
+                <div class="credit-score-right">
+                    <h2 class="h-secondary center">Your Carbon Credit Score</h2>
+                    <p>Based on your emissions readings, your current carbon credit score is:</p>
+                    <h3 class="center" id="creditScore">0</h3>
+                    <p>The carbon credit score is calculated using a specific formula that takes into account your emissions levels of NO2, SO2, CO2, and CO. This score helps you understand your environmental impact and encourages you to take steps towards reducing your carbon footprint.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Precautions Section -->
+    <section id="precautions-section">
+        <h1 class="h-primary center">PRECAUTIONS</h1>
+        <div class="container">
+            <div class="precaution">
+                <h2 class="h-secondary">NO2 Precautions</h2>
+                <p>High NO2 levels can affect respiratory health. To mitigate this, ensure proper ventilation in enclosed spaces, avoid outdoor activities during high pollution periods, and use air purifiers with NO2 filters.</p>
+            </div>
+            <div class="precaution">
+                <h2 class="h-secondary">SO2 Precautions</h2>
+                <p>SO2 can cause respiratory problems and irritate the eyes. Reduce exposure by staying indoors on high pollution days, using air purifiers, and avoiding the use of sulfur-containing fuels.</p>
+            </div>
+            <div class="precaution">
+                <h2 class="h-secondary">CO2 Precautions</h2>
+                <p>High CO2 levels can lead to headaches and dizziness. Ensure good ventilation in indoor spaces, use CO2 detectors, and reduce sources of CO2 such as burning fossil fuels.</p>
+            </div>
+            <div class="precaution">
+                <h2 class="h-secondary">CO Precautions</h2>
+                <p>Carbon monoxide is a toxic gas that can cause headaches and even death. Install CO detectors, avoid using unvented heating appliances, and ensure proper ventilation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alert Messages Section -->
+    <section id="alert-section">
+        <h2>Alert Messages</h2>
+        <div id="alert-message" class="alert"></div>
+        <p>Our system generates real-time alerts when pollution levels exceed safe thresholds. These alerts help individuals and authorities take immediate action to reduce exposure and mitigate the adverse effects of pollution on health and the environment.</p>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.pollutantsmonitoring.com. All rights reserved!
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Example data for the graphs with at least 10 readings
+        let no2Data = [12, 19, 3, 5, 2, 3, 17, 11, 9, 6];
+        let so2Data = [8, 10, 14, 6, 8, 12, 5, 4, 10, 3];
+        let co2Data = [15, 9, 8, 14, 13, 7, 12, 10, 8, 11];
+        let coData = [6, 13, 11, 9, 14, 7, 12, 8, 10, 5];
+
+        const ctxNo2 = document.getElementById('no2Graph').getContext('2d');
+        const ctxSo2 = document.getElementById('so2Graph').getContext('2d');
+        const ctxCo2 = document.getElementById('co2Graph').getContext('2d');
+        const ctxCo = document.getElementById('coGraph').getContext('2d');
+
+        // Function to calculate total readings
+        function calculateTotalReadings(data) {
+            return data.reduce((acc, val) => acc + val, 0);
+        }
+
+        // Update total readings in the DOM
+        function updateTotalReadings() {
+            document.getElementById('totalNo2').innerText = calculateTotalReadings(no2Data);
+            document.getElementById('totalSo2').innerText = calculateTotalReadings(so2Data);
+            document.getElementById('totalCo2').innerText = calculateTotalReadings(co2Data);
+            document.getElementById('totalCo').innerText = calculateTotalReadings(coData);
+        }
+
+        // Initialize the charts
+        const no2Graph = new Chart(ctxNo2, {
+            type: 'bar',
+            data: {
+                labels: ['Reading 1', 'Reading 2', 'Reading 3', 'Reading 4', 'Reading 5', 'Reading 6', 'Reading 7', 'Reading 8', 'Reading 9', 'Reading 10'],
+                datasets: [{
+                    label: 'NO2 Levels',
+                    data: no2Data,
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        const so2Graph = new Chart(ctxSo2, {
+            type: 'bar',
+            data: {
+                labels: ['Reading 1', 'Reading 2', 'Reading 3', 'Reading 4', 'Reading 5', 'Reading 6', 'Reading 7', 'Reading 8', 'Reading 9', 'Reading 10'],
+                datasets: [{
+                    label: 'SO2 Levels',
+                    data: so2Data,
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        const co2Graph = new Chart(ctxCo2, {
+            type: 'bar',
+            data: {
+                labels: ['Reading 1', 'Reading 2', 'Reading 3', 'Reading 4', 'Reading 5', 'Reading 6', 'Reading 7', 'Reading 8', 'Reading 9', 'Reading 10'],
+                datasets: [{
+                    label: 'CO2 Levels',
+                    data: co2Data,
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        const coGraph = new Chart(ctxCo, {
+            type: 'bar',
+            data: {
+                labels: ['Reading 1', 'Reading 2', 'Reading 3', 'Reading 4', 'Reading 5', 'Reading 6', 'Reading 7', 'Reading 8', 'Reading 9', 'Reading 10'],
+                datasets: [{
+                    label: 'CO Levels',
+                    data: coData,
+                    backgroundColor: 'rgba(255, 206, 86, 0.2)',
+                    borderColor: 'rgba(255, 206, 86, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        // Function to update the graphs with new data
+        function updateGraphs() {
+            // Simulate new data for the graphs
+            function getRandomReading() {
+                return Math.floor(Math.random() * 20) + 1;
+            }
+
+            no2Data.shift();
+            no2Data.push(getRandomReading());
+            so2Data.shift();
+            so2Data.push(getRandomReading());
+            co2Data.shift();
+            co2Data.push(getRandomReading());
+            coData.shift();
+            coData.push(getRandomReading());
+
+            // Update the charts with new data
+            no2Graph.data.datasets[0].data = no2Data;
+            no2Graph.update();
+
+            so2Graph.data.datasets[0].data = so2Data;
+            so2Graph.update();
+
+            co2Graph.data.datasets[0].data = co2Data;
+            co2Graph.update();
+
+            coGraph.data.datasets[0].data = coData;
+            coGraph.update();
+
+            // Update total readings and credit score
+            updateTotalReadings();
+            updateCreditScoreAndAlert();
+        }
+
+        // Update the carbon credit score and alert message
+        function updateCreditScoreAndAlert() {
+            const totalNo2 = calculateTotalReadings(no2Data);
+            const totalSo2 = calculateTotalReadings(so2Data);
+            const totalCo2 = calculateTotalReadings(co2Data);
+            const totalCo = calculateTotalReadings(coData);
+
+            // Simple formula for credit score based on totals
+            const creditScore = (totalCo2*4)+(totalCo*1)+(totalSo2*5.5)+(totalNo2*7);
+            document.getElementById('creditScore').innerText = creditScore.toFixed(2);
+
+            // Check and display alerts
+            let alertMessage = '';
+            if (totalNo2 > 120) {
+                alertMessage += 'NO2 levels are high! ';
+            }
+            if (totalSo2 > 120) {
+                alertMessage += 'SO2 levels are high! ';
+            }
+            if (totalCo2 > 110) {
+                alertMessage += 'CO2 levels are high! ';
+            }
+            if (totalCo > 110) {
+                alertMessage += 'CO levels are high! ';
+            }
+
+            // Display alert message if any condition is met
+            if (alertMessage) {
+                document.getElementById('alert-message').innerText = alertMessage;
+                document.getElementById('alert-section').style.display = 'block'; // Show the alert section
+                document.getElementById('alert-nav').classList.add('highlight'); // Highlight the alert nav link
+            } else {
+                document.getElementById('alert-message').innerText = 'All levels are within safe limits.';
+                document.getElementById('alert-section').style.display = 'none'; // Hide the alert section
+                document.getElementById('alert-nav').classList.remove('highlight'); // Remove highlight from alert nav link
+            }
+        }
+
+        // Initial call to update graphs and credit score
+        updateGraphs();
+
+        // Set interval to update graphs and credit score every 5 seconds
+        setInterval(updateGraphs, 5000);
+    </script>
+</body>
+
+</html>
